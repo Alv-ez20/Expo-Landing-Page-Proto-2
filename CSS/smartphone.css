@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+main {
+	max-width: 100%;
+	overflow-wrap: hidden;
+}
+
+#navbar {
+	max-width: inherit;
+}
+
+#imagen-top {
+	display: none;
+}
+
+#line-link {
+	display: none;
+}
+
+#boton-display {
+	border: none;
+	padding: 1rem;
+}
+
+#toggler {
+	color: #fff;
+	size: 3rem;
+}
+
+#slide-1, #slide-2, #slide-3, #slide-4, #slide-5 {
+	max-width: 100%;
+}
+
+.single-slide {
+	height: 80vh;
+	background-width: 400px;
+}
+
+#second-view, #third-view{
+ 	height: 850px;
+ 	max-width: 480px;
+}
+
+#second-title h1 {
+	margin-top: 6rem;
+}
+ 
+#logo {
+	margin: 0;
+}
+
+#logo-imagen, #producto-imagen {
+	margin: 0;
+	width: 100%;
+}
+
+#logo-imagen img, #producto-imagen img {
+	width: 100%;
+}
+
+#para-responsive {
+	display: block;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#third-title {
+	display: none;
+}
+
+footer {
+	height: 330px;
+}
+
+#img-insta{
+	display: none;
+}
+
+#list-insta {
+	display: inherit;
+	color: #fff;
+	font-size: 5rem;
+	margin-left: 7.5rem;
+}

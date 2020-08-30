@@ -1,0 +1,315 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*NOTA: Para los indicadores de CSS se han utilizado solamente ID, las CLASS se han reservado a clases de 		
+Bootstrap para evitar confuciones*/
+
+html {
+	margin-left: 0;
+	margin-right: 0;
+	padding: 0;
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: 4px solid #fff;
+	transition: ease 1500ms all;
+}
+
+#line-link {
+	padding: 0;
+	margin: 0;
+	padding-bottom: 0.5rem;
+	border-right: 4px solid #fff;
+	transition: ease 1500ms all;
+}
+
+#imagen-top {
+	margin-right: 2rem;
+	margin-left: 2rem;
+	width: 40px;
+	height: 55px;
+}
+
+#toggler {
+	transition: ease 1500ms all;
+	color: #545454;
+}
+
+#links {
+	font-weight: bold;
+	font-size: 1.2rem;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+	padding-left: 2.5rem;
+	transition: ease 1500ms all;
+}
+
+#links:hover {
+	color: #867160;
+}
+
+#insta-header{
+	margin-left: 10rem;
+}
+
+#insta-img-top {
+	width: 40px;
+	height: 40px;
+}
+
+/* 
+==================================================================
+==================================================================
+					Clases para cambio de navbar
+==================================================================
+==================================================================
+*/
+/*abajo*/
+
+	/*id=navbar*/
+.navbar-abajo {
+	background-color: #d8a688;
+	border-bottom: 5px solid #737373 !important;
+}
+
+	/*id=line-link*/
+.line-link-navbar-abajo {
+	border-right: 5px solid #737373 !important;
+}
+
+	/*id=toggler*/
+.toggler-navbar-abajo {
+	color: #737373;
+}
+
+	/*id=links*/
+.links-navbar-abajo {
+	color: #737373 !important;
+}
+
+.links-navbar-abajo:hover {
+	text-decoration: none;
+	color: #fff8 !important;
+}
+/* 
+==================================================================
+==================================================================
+				Fin de clases para cambio de navbar
+==================================================================
+==================================================================
+*/
+
+main {
+	padding: 0;
+	margin: 0;
+}
+
+/* 
+==================================================================
+==================================================================
+				Inicio Propiedades de slider
+==================================================================
+==================================================================
+*/
+
+/*NOTA IMPORTANTE: El slider usado forma parte de el fondo de el contenedor main, 
+no se usaron clases ni propiedades de Bootstrap*/
+
+#contenedor-slider {
+  width: 100%;
+  height:500px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.single-slide {
+  	width: 100%;
+    height: 700px;
+    position: absolute;
+  	opacity: 0;
+	animation: animación-slider;
+	animation-duration: 25s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+  	background-size: cover;
+}
+
+	/*El nombre de la animación para el efecto es "animación-slider", no cambiar*/
+
+#slide-1 {
+	background-color: #D99A73; 
+	background-image: url(../IMGS/1.jpeg);
+}
+#slide-2 {
+	background-color: #CFD99E; 
+	animation-delay: 5s;
+	background-image: url(../IMGS/2.jpeg);
+}
+#slide-3 {
+	background-color: #D8A688; 
+	animation-delay: 10s; 
+	background-image: url(../IMGS/3.jpeg);
+}
+#slide-4 {
+	background-color: #73D6D9; 
+	animation-delay: 15s; 
+	background-image: url(../IMGS/3.jpeg);}
+#slide-5 {
+	background-color: #B77ED9; 
+	animation-delay: 20s; 
+	background-image: url(../IMGS/4.jpeg);
+}
+
+@keyframes animación-slider {
+    
+	0% {
+	    opacity: 0;
+	}
+	6% {
+    	opacity: 1;
+	}
+	24% {
+    	opacity: 1;
+	}
+	30% {
+    	opacity: 0;
+	}
+	100% {
+    	opacity: 0;
+	}
+}
+/* 
+==================================================================
+==================================================================
+				Fin Propiedades de slider
+==================================================================
+==================================================================
+*/
+
+#contenedor-cont {
+	padding: 0;
+	margin: 0;
+	background-color: #f9f6f2;
+}
+
+#second-view{
+	height: 600px; 
+	margin-bottom: 0;
+}
+
+#second-title h1 {
+	margin-top: 15rem;
+}
+
+#logo-imagen {
+	margin: auto;
+	margin-top: 5rem;
+	width: 450px;
+}
+
+#second-title h1, #third-view h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3rem; 
+	font-weight: bold;
+	color: #4f5964;
+}
+
+#second-title h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2rem; 
+	font-weight: lighter;
+	color: #d8a688;
+}
+
+#third-view {
+	height: 500px;
+	margin: auto;
+	margin-bottom: 2rem;
+	margin-top: 0;
+}
+
+#para-responsive {
+	display: none;
+}
+
+#third-title {
+	max-width: 600px;
+	margin: auto;
+	margin-top: 8rem;
+	margin-right: 3.5rem;
+}
+
+#third-view h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem; 
+	font-weight: lighter;
+	color: #d8a688;
+}
+
+#producto {
+	margin: auto;
+}
+
+#producto-imagen {
+	margin: auto;
+	margin-left: 5rem;
+}
+
+#logo-imagen img, #producto-imagen img {
+	width: 450px;
+}
+
+footer {
+	background-color: #4f5964;
+	margin: 0;
+	padding: 0;
+}
+
+#data-list {
+	list-style: none;
+	margin-top: 3rem;
+}
+
+#data-link {
+	margin: auto;
+	padding-bottom: 1rem;
+}
+
+#data-link h1, #data-link h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+}
+
+#ft-primario {
+	color: #bf8360;
+}
+
+#ft-secundario {
+	color: #fdfbfb;
+}
+
+#list-insta{
+	display: none;
+}
+
+#img-insta {
+	width: 5rem;
+	height: 5rem;
+	margin-top: 3.5rem;
+	margin-left: 250px;
+	margin-right: 250px;
+}
+
